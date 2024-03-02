@@ -38,7 +38,39 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
+@if(session('success'))
+<div id="alert-message" class="hidden">
+    <script>
+        $(document).ready(function() {
+            toastr.options = {
+                "positionClass": "toast-top-center",
+                "progressBar": true,
+                "timeOut": 4000
+            };
+            toastr.success('{{ session('success') }}');
+        });
+    </script>
+</div>
+@endif
+
+@if(session('error'))
+<div id="alert-message" class="hidden">
+    <script>
+        $(document).ready(function() {
+            toastr.options = {
+                "positionClass": "toast-top-center",
+                "progressBar": true,
+                "timeOut": 4000
+            };
+            toastr.error('{{ session('error') }}');
+        });
+    </script>
+</div>
+@endif
 <body class="ms-body ms-aside-left-open ms-primary-theme ms-has-quickbar">
   <!-- Setting Panel -->
   <div class="ms-toggler ms-settings-toggle ms-d-block-lg">
@@ -91,10 +123,10 @@
     <div class="logo-sn ms-d-block-lg">
       <a class="pl-0 ml-0 text-center" href="index-2.html"> <img src="assets/img/medjestic-logo-216x62.png" alt="logo"> </a>
       <a href="#" class="text-center ms-logo-img-link"> <img src="assets/avatar.png" alt="logo"></a>
-      <h5 class="text-center text-white mt-2">        <h2>{{Auth::user()->name}}</h2>
-      </h5>
-      <h6 class="text-center text-white mb-3">        <h2>{{Auth::user()->role}}</h2>
-      </h6>
+      <h5 class="text-center text-white mt-2">{{Auth::user()->name}} <h5>
+      
+      <h6 class="text-center text-white mb-3">  {{Auth::user()->role}}</h6>
+      
     </div>
     <!-- Navigation -->
     <ul class="accordion ms-main-aside fs-14" id="side-nav-accordion">
@@ -112,15 +144,29 @@
      
       <!-- Doctor -->
       <!-- Patient -->
+      
+      @if(Auth::user()->role=="Assuré")
+      
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#doctor" aria-expanded="false" aria-controls="doctor">
+          <span><i class="fas fa-stethoscope"></i>Ma Famille</span>
+        </a>
+        <ul id="doctor" class="collapse" aria-labelledby="doctor" data-parent="#side-nav-accordion">
+          <li> <a href="/ajout_membre">ajouter un membre</a> </li>
+          <li> <a href="/liste_membre">Liste des membres famille</a> </li>
+        </ul>
+      </li>
+      @else
       <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#assurés" aria-expanded="false" aria-controls="assurés">
           <span><i class="fas fa-stethoscope"></i>Mes Assurés</span>
         </a>
         <ul id="assurés" class="collapse" aria-labelledby="assurés" data-parent="#side-nav-accordion" >
             <a href="#mymodal"  data-toggle="modal"style="color: black"> import Assurés</a>
-            <li> <a href="/listeAssurés">lise Assurés</a> </li>
+            <li> <a href="/listeAssurés">liste Assurés</a> </li>
         </ul>
       </li>
+      @endif
       <!-- /Apps -->
     </ul>
   </aside>

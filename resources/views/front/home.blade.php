@@ -74,6 +74,8 @@
                                         <li><a href="#rs-project">Project</a></li>
                                         <li><a href="#rs-blog">Blog</a></li>
                                         <li><a href="#rs-contact">Contact</a> </li>
+                                        <li><a href="/login">login</a> </li>
+
                                     </ul> <!-- //.nav-menu -->
                                 </div>
                                 <div class="rs-header-social">
@@ -125,6 +127,8 @@
                     <li><a href="#rs-project">Project</a></li>
                     <li><a href="#rs-blog">Blog</a></li>
                     <li><a href="#rs-contact">Contact</a> </li>
+                    
+
                 </ul> <!-- //.nav-menu -->
             </div>
             <div class="widget gallery-widget">

@@ -78,7 +78,11 @@ class AssurerController extends Controller
                             $user->save();
 
                             Mail::to($user->email)->send(new donnéesAssurer($user, $password));
+                        }else{
+                            return redirect()->back()->with('error', 'il ya des emails deja Liés a des comptes.');
+
                         }
+
         }
         fclose($file);
         return redirect()->back()->with('success', ' Les assurés ont été importés avec succès.');

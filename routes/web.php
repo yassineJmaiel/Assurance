@@ -4,6 +4,9 @@ use App\Http\Controllers\AssurerController;
 use App\Http\Controllers\PatientController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\GoogleSearchController;
+use App\Http\Controllers\MembreFamilleController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,26 +19,37 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('front.home');
 });
 Route::get('/acceuil', function () {
     return view('front/home');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::middleware(['auth'])->group(function () {
+
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    });
+
+    Route::get('/profile', function () {
+        return view('profile');
+    });
+
+    Route::get('/annuaire', function () {
+        return view('annuaire');
+    });
+
+    Route::get('/listeAssurés', [AssurerController::class, 'showPatients']);
+    Route::get('/ajout_membre', [MembreFamilleController::class, 'ajout_membre_view']);
+    Route::post('/ajout_membre', [MembreFamilleController::class, 'ajout_membre']);
+
+    Route::post('csv-add', [AssurerController::class, 'importPatients']);
+    Route::post('changepassword', [AssurerController::class, 'changepassword']);
+    Route::get('/search', [GoogleSearchController::class, 'search']);
+
 });
-
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-
-Route::get('/listeAssurés', [AssurerController::class, 'showPatients']);
-Route::post('csv-add', [AssurerController::class, 'importPatients']);
-Route::post('changepassword', [AssurerController::class, 'changepassword']);
-
 Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

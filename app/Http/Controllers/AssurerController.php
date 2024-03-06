@@ -30,7 +30,7 @@ class AssurerController extends Controller
         $user->password = Hash::make($request->password);
         $user->save();
 
-        return redirect('/dashboardetudiant')->with('success','mot de passe changé  avec succés');
+        return redirect()->back()->with('success','mot de passe changé  avec succés');
     }
 
 

@@ -71,8 +71,7 @@
                                         <li><a href="#rs-header">Home</a></li>
                                         <li><a href="#rs-about">About</a></li>
                                         <li><a href="#rs-service">Services</a></li>
-                                        <li><a href="#rs-project">Project</a></li>
-                                        <li><a href="#rs-blog">Blog</a></li>
+                                        
                                         <li><a href="#rs-contact">Contact</a> </li>
                                         <li><a href="/login">login</a> </li>
 

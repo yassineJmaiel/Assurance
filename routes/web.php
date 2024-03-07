@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\GoogleSearchController;
 use App\Http\Controllers\MembreFamilleController;
+use App\Http\Controllers\RemboursementController;
+use App\Models\remboursement;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +51,7 @@ Route::middleware(['auth'])->group(function () {
 
 });
 Auth::routes();
+Route::get('/ajout_remboursement', [RemboursementController::class, 'ajout_remboursement_view']);
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -144,9 +144,8 @@
      
       <!-- Doctor -->
       <!-- Patient -->
-      
-      @if(Auth::user()->role=="Assuré")
-      
+    
+      @if(Auth::user()->role=="Assuré"  && Auth::user()->typeAssurance<>"ASI")
       <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#doctor" aria-expanded="false" aria-controls="doctor">
           <span><i class="fas fa-stethoscope"></i>Ma Famille</span>
@@ -155,8 +154,28 @@
           <li> <a href="/ajout_membre">ajouter un membre</a> </li>
           <li> <a href="/liste_membre">Liste des membres famille</a> </li>
         </ul>
+        <li class="menu-item">
+          <a href="#" class="has-chevron" data-toggle="collapse" data-target="#remboursement" aria-expanded="false" aria-controls="remboursement">
+            <span><i class="fas fa-stethoscope"></i>Remboursement</span>
+          </a>
+          <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
+            <li>  <a href="ajout_remboursement"  > Demande Remboursement</a> </li>
+              <li> <a href="#">liste Remboursement</a> </li>
+          </ul>
+        </li>
       </li>
-      @else
+      @elseif(Auth::user()->role=="Assuré" && Auth::user()->typeAssurance=="ASI")
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#remboursement" aria-expanded="false" aria-controls="remboursement">
+          <span><i class="fas fa-stethoscope"></i>Remboursement</span>
+        </a>
+        <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
+          <li>  <a href="ajout_remboursement"  > Demande Remboursement</a> </li>
+            <li> <a href="#">liste Remboursement</a> </li>
+        </ul>
+      </li>
+@else
+
       <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#assurés" aria-expanded="false" aria-controls="assurés">
           <span><i class="fas fa-stethoscope"></i>Mes Assurés</span>
@@ -164,6 +183,15 @@
         <ul id="assurés" class="collapse" aria-labelledby="assurés" data-parent="#side-nav-accordion" >
             <a href="#mymodal"  data-toggle="modal"style="color: black"> import Assurés</a>
             <li> <a href="/listeAssurés">liste Assurés</a> </li>
+        </ul>
+      </li>
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#remboursement" aria-expanded="false" aria-controls="remboursement">
+          <span><i class="fas fa-stethoscope"></i>Remboursement</span>
+        </a>
+        <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
+          
+            <li> <a href="#">liste Remboursement</a> </li>
         </ul>
       </li>
       @endif

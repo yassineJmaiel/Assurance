@@ -73,6 +73,8 @@ class AssurerController extends Controller
                             $password = Str::random(8);
                             $user->name = $patientData['nomPrenom'] ;
                             $user->email = $patientData['email'];
+                            $user->typeAssurance = $patient->typeAssurance;
+
                             $user->password = bcrypt($password);
                             $user->role= "Assuré"; 
                             $user->save();

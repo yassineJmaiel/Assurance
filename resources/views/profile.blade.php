@@ -17,6 +17,9 @@
       <img src="assets/avatar.png" class="ms-img-large ms-img-round ms-user-img" alt="people">
       <div class="ms-card-body">
         <h2>{{Auth::user()->name}}</h2>
+        <h2 style="    font-family: math;
+        color: darkslateblue;"> Type d'assurance : {{Auth::user()->typeAssurance}}</h2>
+
         <span></span>
         <div class="box">
             <div class="">

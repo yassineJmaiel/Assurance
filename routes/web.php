@@ -52,6 +52,12 @@ Route::middleware(['auth'])->group(function () {
 });
 Auth::routes();
 Route::get('/ajout_remboursement', [RemboursementController::class, 'ajout_remboursement_view']);
+Route::post('/add_remboursement', [RemboursementController::class, 'store']);
+Route::get('/list_remboursements', [RemboursementController::class, 'liste']);
+Route::get('/list_remboursements_assureur', [RemboursementController::class, 'liste_assureur']);
+
+
+
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -14,4 +14,9 @@ class assurer extends Model
     {
         return $this->belongsTo(User::class, 'assureur_id');
     }
+
+    public function remboursements()
+    {
+        return $this->hasMany(Remboursement::class, 'assurer_id', 'id');
+    }
 }

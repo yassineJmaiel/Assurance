@@ -12,8 +12,20 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('remboursements', function (Blueprint $table) {
-            $table->id();
             $table->timestamps();
+            $table->id();
+            $table->unsignedBigInteger('id_membre')->nullable();
+            $table->foreign('id_membre')->references('id')->on('membre_familles');
+            $table->unsignedBigInteger('assurer_id'); 
+        $table->foreign('assurer_id')->references('id')->on('users');
+            $table->string('nom_prestataire')->nullable();
+            $table->date('date_service');
+            $table->string('medecin');
+            $table->decimal('montant');
+            $table->string('status')->default("en cours");
+
+            $table->decimal('montant_total')->nullable();
+            $table->string('piece_jointe')->nullable();
         });
     }
 

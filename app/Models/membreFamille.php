@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class membreFamille extends Model
 {
     use HasFactory;
+
+    public function remboursements()
+    {
+        return $this->hasMany(Remboursement::class, 'id_membre', 'id');
+    }
 }

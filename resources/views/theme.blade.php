@@ -160,7 +160,7 @@
           </a>
           <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
             <li>  <a href="ajout_remboursement"  > Demande Remboursement</a> </li>
-              <li> <a href="#">liste Remboursement</a> </li>
+              <li> <a href="list_remboursements">liste Remboursement</a> </li>
           </ul>
         </li>
       </li>
@@ -171,7 +171,7 @@
         </a>
         <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
           <li>  <a href="ajout_remboursement"  > Demande Remboursement</a> </li>
-            <li> <a href="#">liste Remboursement</a> </li>
+            <li> <a href="list_remboursements">liste Remboursement</a> </li>
         </ul>
       </li>
 @else
@@ -191,7 +191,7 @@
         </a>
         <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
           
-            <li> <a href="#">liste Remboursement</a> </li>
+            <li> <a href="list_remboursements_assureur">liste Remboursement</a> </li>
         </ul>
       </li>
       @endif

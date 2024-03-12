@@ -7,23 +7,21 @@
         <div class="col-md-12">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb pl-0">
-                    <li class="breadcrumb-item active" aria-current="page">Liste des Assurés</li>
+                    <li class="breadcrumb-item active" aria-current="page">Liste Remboursement</li>
                 </ol>
             </nav>
             <div class="ms-panel">
                 <div class="ms-panel-body">
                     <div class="table-responsive">
-                        <table id="example" class="table table-striped thead-primary w-100">
+                        <table id="exemple3" class="table table-striped thead-primary w-100">
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    @foreach($remboursement as $remboursementItem)
-                                   
+                                 
 
                                      <th>Membre Famille </th>
                                     <th>Nom Prestataire</th>
-                                   
-                               
+                            
                                     <th>Date de Service</th>
                                     <th>Médecin</th>
                                     <th>Montant</th>

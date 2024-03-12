@@ -17,8 +17,6 @@ return view('ajout_remboursement',compact('membres')); }
 
 public function store(Request $request)
 {
- 
-
   if($request->type=="pour_moi"){
   $file = $request->file('piece_jointe'); 
   $fileName = time() . '_' . $file->getClientOriginalName();
@@ -33,7 +31,7 @@ public function store(Request $request)
         
 
     $remboursement = new Remboursement();
-    $remboursement->id_membre = ($request->type == "pour_moi") ? NULL : $request->input('membre_id');
+    $remboursement->id_membre = ($request->type == "pour_moi") ? NULL : $request->input('id_membre');
     $remboursement->nom_prestataire = $request->input('nom_prestataire');
     $remboursement->date_service = ($request->type == "pour_moi") ? $request->input('date_service') : $request->input('date_service_membre');
     $remboursement->medecin = ($request->type == "pour_moi") ? $request->input('medecin') : $request->input('medecin_membre');

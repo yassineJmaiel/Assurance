@@ -191,7 +191,7 @@
         </a>
         <ul id="remboursement" class="collapse" aria-labelledby="remboursement" data-parent="#side-nav-accordion" >
           
-            <li> <a href="list_remboursements_assureur">liste Remboursement</a> </li>
+            <li> <a href="list_remboursements_assureur">liste Demande Remboursement</a> </li>
         </ul>
       </li>
       @endif
@@ -760,6 +760,9 @@
 <script>
      $(document).ready(function() {
             $('#exemple').DataTable();
+            $('#exemple2').DataTable();
+            $('#exemple3').DataTable();
+
     });
 </script>
 </script>

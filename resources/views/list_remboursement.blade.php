@@ -13,12 +13,12 @@
             <div class="ms-panel">
                 <div class="ms-panel-body">
                     <div class="table-responsive">
-                        <table id="example" class="table table-striped thead-primary w-100">
+                        <table id="example2" class="table table-striped thead-primary w-100">
                             <thead>
                                 <tr>
                                     <th>ID</th>
                                     <th> Assuré </th>
-                                    @foreach($remboursement as $remboursementItem)
+                                  
                               
 
                                      <th>Membre Famille </th>

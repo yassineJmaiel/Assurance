@@ -55,7 +55,7 @@
                                 <label for="nomPrestataire">Nom membre famille</label>
                                 <select class="form-control"  name="id_membre">
                                     @foreach ($membres as $membre)
-                                    <option value="id"> {{$membre->nomPrenom}}</option>
+                                    <option value="{{$membre->id}}"> {{$membre->nomPrenom}}</option>
                                     @endforeach
                                     
                                 </select>

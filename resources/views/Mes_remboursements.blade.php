@@ -18,12 +18,11 @@
                                 <tr>
                                     <th>ID</th>
                                     @foreach($remboursement as $remboursementItem)
-                                    @if($remboursementItem->id_membre !== null)  
+                                   
 
                                      <th>Membre Famille </th>
                                     <th>Nom Prestataire</th>
-                                    @endif
-                                    @endforeach
+                                   
                                
                                     <th>Date de Service</th>
                                     <th>Médecin</th>
@@ -44,7 +43,10 @@
                                         </td>
                                     <td>
                                         {{ $remboursementItem->nom_prestataire }}</td> 
-                                       
+                                       @else
+                                       <td># </td>
+                                       <td># </td>
+
                                     @endif
                                             
                                             

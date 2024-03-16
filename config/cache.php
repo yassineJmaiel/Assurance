@@ -95,6 +95,15 @@ return [
 
     ],
 
+
+'stores' => [
+    'file' => [
+        'driver' => 'file',
+        'path' => storage_path('framework/cache/data'),
+    ],
+    // Add configurations for other cache drivers if needed
+],
+
     /*
     |--------------------------------------------------------------------------
     | Cache Key Prefix

@@ -68,12 +68,12 @@
                             <div class="rs-header-rightside">
                                 <div class="main-menu hidden-md">
                                     <ul class="nav-menu">
-                                        <li><a href="#rs-header">Home</a></li>
+                                        <li><a href="">Accuiel</a></li>
                                         <li><a href="#rs-about">About</a></li>
                                         <li><a href="#rs-service">Services</a></li>
                                         
-                                        <li><a href="#rs-contact">Contact</a> </li>
-                                        <li><a href="/login">login</a> </li>
+                                        <li><a href="/contact">Contact</a> </li>
+                                        <li><a href="/login">Se connecter</a> </li>
 
                                     </ul> <!-- //.nav-menu -->
                                 </div>

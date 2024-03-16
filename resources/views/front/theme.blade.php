@@ -51,6 +51,24 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="assetsfront/css/style.css">
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+@if(session('success'))
+<div id="alert-message" class="hidden">
+    <script>
+        $(document).ready(function() {
+            toastr.options = {
+                "positionClass": "toast-top-center",
+                "progressBar": true,
+                "timeOut": 4000
+            };
+            toastr.success('{{ session('success') }}');
+        });
+    </script>
+</div>
+@endif
 
 
 <body class="home-2">
@@ -68,12 +86,14 @@
                             <div class="rs-header-rightside">
                                 <div class="main-menu hidden-md">
                                     <ul class="nav-menu">
-                                        <li><a href="#rs-header">Home</a></li>
+                                        <li><a href="/">Accueil</a></li>
                                         <li><a href="#rs-about">About</a></li>
                                         <li><a href="#rs-service">Services</a></li>
                                         <li><a href="#rs-project">Project</a></li>
                                         <li><a href="#rs-blog">Blog</a></li>
-                                        <li><a href="#rs-contact">Contact</a> </li>
+                                        <li><a href="/login">Se connecter</a> </li>
+
+                                        <li><a href="/contact">Contact</a> </li>
                                     </ul> <!-- //.nav-menu -->
                                 </div>
                                 <div class="rs-header-social">

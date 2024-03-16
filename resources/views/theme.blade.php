@@ -13,28 +13,28 @@
 <!-- Bootstrap JS -->
 
 <!-- DataTables CSS -->
-<link href="assets/css/datatables.min.css" rel="stylesheet">
+<link href="/assets/css/datatables.min.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" defer></script>
 <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js" defer></script>
 <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js" defer></script>
 
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="assets/vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/vendors/iconic-fonts/flat-icons/flaticon.css">
-  <link rel="stylesheet" href="assets/vendors/iconic-fonts/cryptocoins/cryptocoins.css">
-  <link rel="stylesheet" href="assets/vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
+  <link href="/assets/vendors/iconic-fonts/font-awesome/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/vendors/iconic-fonts/flat-icons/flaticon.css">
+  <link rel="stylesheet" href="/assets/vendors/iconic-fonts/cryptocoins/cryptocoins.css">
+  <link rel="stylesheet" href="/assets/vendors/iconic-fonts/cryptocoins/cryptocoins-colors.css">
   <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
   <!-- jQuery UI -->
-  <link href="assets/css/jquery-ui.min.css" rel="stylesheet">
+  <link href="/assets/css/jquery-ui.min.css" rel="stylesheet">
   <!-- Page Specific CSS (Slick Slider.css) -->
-  <link href="assets/css/slick.css" rel="stylesheet">
+  <link href="/assets/css/slick.css" rel="stylesheet">
   <!-- medjestic styles -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
   <!-- Page Specific CSS (Morris Charts.css) -->
-  <link href="assets/css/morris.css" rel="stylesheet">
+  <link href="/assets/css/morris.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 </head>
@@ -121,8 +121,8 @@
   <aside id="ms-side-nav" class="side-nav fixed ms-aside-scrollable ms-aside-left">
     <!-- Logo -->
     <div class="logo-sn ms-d-block-lg">
-      <a class="pl-0 ml-0 text-center" href="index-2.html"> <img src="assets/img/medjestic-logo-216x62.png" alt="logo"> </a>
-      <a href="#" class="text-center ms-logo-img-link"> <img src="assets/avatar.png" alt="logo"></a>
+      <a class="pl-0 ml-0 text-center" href="index-2.html"> <img src="/assets/img/medjestic-logo-216x62.png" alt="logo"> </a>
+      <a href="#" class="text-center ms-logo-img-link"> <img src="/assets/avatar.png" alt="logo"></a>
       <h5 class="text-center text-white mt-2">{{Auth::user()->name}} <h5>
       
       <h6 class="text-center text-white mb-3">  {{Auth::user()->role}}</h6>
@@ -164,6 +164,14 @@
           </ul>
         </li>
       </li>
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#annuaire" aria-expanded="false" aria-controls="annuaire">
+          <span><i class="fas fa-stethoscope"></i>Annuaire</span>
+        </a>
+        <ul id="annuaire" class="collapse" aria-labelledby="annuaire" data-parent="#side-nav-accordion" >
+            <li class="menu-item"> <a href="/annuaire">Consulter l'Annuaire </a>
+            </ul>
+      </li>
       @elseif(Auth::user()->role=="Assuré" && Auth::user()->typeAssurance=="ASI")
       <li class="menu-item">
         <a href="#" class="has-chevron" data-toggle="collapse" data-target="#remboursement" aria-expanded="false" aria-controls="remboursement">
@@ -174,6 +182,15 @@
             <li> <a href="list_remboursements">liste Remboursement</a> </li>
         </ul>
       </li>
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#annuaire" aria-expanded="false" aria-controls="annuaire">
+          <span><i class="fas fa-stethoscope"></i>Annuaire</span>
+        </a>
+        <ul id="annuaire" class="collapse" aria-labelledby="annuaire" data-parent="#side-nav-accordion" >
+            <li class="menu-item"> <a href="/annuaire">Consulter l'Annuaire </a>
+            </ul>
+      </li>
+
 @else
 
       <li class="menu-item">
@@ -194,7 +211,24 @@
             <li> <a href="list_remboursements_assureur">liste Demande Remboursement</a> </li>
         </ul>
       </li>
-      @endif
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#annuaire" aria-expanded="false" aria-controls="annuaire">
+          <span><i class="fas fa-stethoscope"></i>Annuaire</span>
+        </a>
+        <ul id="annuaire" class="collapse" aria-labelledby="annuaire" data-parent="#side-nav-accordion" >
+            <li class="menu-item"> <a href="/annuaire">Consulter l'Annuaire </a>
+            </ul>
+      </li>    
+
+      <li class="menu-item">
+        <a href="#" class="has-chevron" data-toggle="collapse" data-target="#contact" aria-expanded="false" aria-controls="contact">
+          <span><i class="fas fa-stethoscope"></i>Contact ({{$count}})</span>
+        </a>
+        <ul id="contact" class="collapse" aria-labelledby="contact" data-parent="#side-nav-accordion" >
+            <li class="menu-item"> <a href="/contacts">Mes contacts ({{$count}})</a>
+            </ul>
+      </li> 
+        @endif
       <!-- /Apps -->
     </ul>
   </aside>
@@ -343,7 +377,7 @@
         <span class="ms-toggler-bar bg-white"></span>
       </div>
       <div class="logo-sn logo-sm ms-d-block-sm">
-        <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index-2.html"><img src="assets/img/medjestic-logo-84x41.png" alt="logo"> </a>
+        <a class="pl-0 ml-0 text-center navbar-brand mr-0" href="index-2.html"><img src="/assets/img/medjestic-logo-84x41.png" alt="logo"> </a>
       </div>
       <ul class="ms-nav-list ms-inline mb-0" id="ms-nav-options">
 
@@ -390,7 +424,7 @@
           </ul>
         </li>
         <li class="ms-nav-item ms-nav-user dropdown">
-          <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="assets/avatar.png" alt="people"> </a>
+          <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="/assets/avatar.png" alt="people"> </a>
           <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">
             <li class="dropdown-menu-header">
               <h6 class="dropdown-header ms-inline m-0"><span class="text-disabled">Welcome, Dr Samuel Deo</span></h6>
@@ -729,31 +763,31 @@
 
   <!-- SCRIPTS -->
   <!-- Global Required Scripts Start -->
-  <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/perfect-scrollbar.js"> </script>
-  <script src="assets/js/jquery-ui.min.js"> </script>
+  <script src="/assets/js/jquery-3.3.1.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script src="/assets/js/perfect-scrollbar.js"> </script>
+  <script src="/assets/js/jquery-ui.min.js"> </script>
 
   <!-- Global Required Scripts End -->
-  <script src="assets/js/d3.v3.min.js"> </script>
-  <script src="assets/js/topojson.v1.min.js"> </script>
-  <script src="assets/js/datamaps.all.min.js"> </script>
+  <script src="/assets/js/d3.v3.min.js"> </script>
+  <script src="/assets/js/topojson.v1.min.js"> </script>
+  <script src="/assets/js/datamaps.all.min.js"> </script>
 
 
   <!-- Page Specific Scripts Start -->
-  <script src="assets/js/slick.min.js"> </script>
-  <script src="assets/js/moment.js"> </script>
-  <script src="assets/js/jquery.webticker.min.js"> </script>
-  <script src="assets/js/Chart.bundle.min.js"> </script>
-  <script src="assets/js/index-chart.js"> </script>
+  <script src="/assets/js/slick.min.js"> </script>
+  <script src="/assets/js/moment.js"> </script>
+  <script src="/assets/js/jquery.webticker.min.js"> </script>
+  <script src="/assets/js/Chart.bundle.min.js"> </script>
+  <script src="/assets/js/index-chart.js"> </script>
 
   <!-- Page Specific Scripts Finish -->
-  <script src="assets/js/calendar.js"></script>
+  <script src="/assets/js/calendar.js"></script>
   <!-- medjestic core JavaScript -->
-  <script src="assets/js/framework.js"></script>
+  <script src="/assets/js/framework.js"></script>
   <!-- Settings -->
-  <script src="assets/js/settings.js"></script>
+  <script src="/assets/js/settings.js"></script>
 
 </table>
 

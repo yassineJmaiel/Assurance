@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\GoogleSearchController;
 use App\Http\Controllers\MembreFamilleController;
 use App\Http\Controllers\RemboursementController;
+use App\Http\Controllers\ReponseDemandeController;
 use App\Models\remboursement;
 
 /*
@@ -51,6 +52,15 @@ Route::middleware(['auth'])->group(function () {
         return view('annuaire');
     });
     
+    Route::post('reponse', [ReponseDemandeController::class, 'store']);
+    Route::get('list_reponses', [ReponseDemandeController::class, 'reponses']);
+    Route::get('liste_membre', [MembreFamilleController::class, 'list']);
+    Route::get('deletemembre/{id}', [MembreFamilleController::class, 'delete']);
+    Route::get('deleteAssuré/{id}', [AssurerController::class, 'delete']);
+
+
+
+    
 
     Route::get('/listeAssurés', [AssurerController::class, 'showPatients']);
     Route::get('/ajout_membre', [MembreFamilleController::class, 'ajout_membre_view']);
@@ -63,7 +73,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/detailscontact/{id}', [ContactController::class, 'details']);
     Route::get('/deletecontact/{id}', [ContactController::class, 'delete']);
 
-
+    
 
     
 });

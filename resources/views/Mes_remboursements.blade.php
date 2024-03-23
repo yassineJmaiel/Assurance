@@ -52,7 +52,19 @@
                                         <td>{{ $remboursementItem->medecin }}</td>
                                         <td>{{ $remboursementItem->montant }}</td>
                                         <td>{{ $remboursementItem->montant_total }}</td>
-                                        <td>{{ $remboursementItem->status }}</td>
+                                        <td>@switch($remboursementItem->status)
+                                            @case('en cours')
+                                                <button type="button" class="btn btn-warning" style="margin-top: 0rem">En cours</button>
+                                                @break
+                                    
+                                            @case('Accepté')
+                                                <button type="button" class="btn btn-success"style="margin-top: 0rem">Accepté</button>
+                                                @break
+                                    
+                                            @default
+                                                <button type="button" class="btn btn-danger" style="margin-top: 0rem">Refusé</button>
+                                        @endswitch</td>
+
 
                                         <td>
                                             <a href="#">

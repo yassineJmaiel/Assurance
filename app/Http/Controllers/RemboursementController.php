@@ -18,15 +18,17 @@ return view('ajout_remboursement',compact('membres')); }
 public function store(Request $request)
 {
   if($request->type=="pour_moi"){
+    if($request->file('piece_jointe')<>null){
   $file = $request->file('piece_jointe'); 
   $fileName = time() . '_' . $file->getClientOriginalName();
    $file->move(public_path('uploads/remboursement'), $fileName);
-  } 
+  }  } 
    if($request->type<>"pour_moi"){
+    if($request->file('piece_jointe')<>null){
     $file = $request->file('piece_jointe_membre'); 
     $fileName = time() . '_' . $file->getClientOriginalName();
      $file->move(public_path('uploads/remboursement'), $fileName);
-   
+    }
     }
         
 
@@ -36,7 +38,9 @@ public function store(Request $request)
     $remboursement->date_service = ($request->type == "pour_moi") ? $request->input('date_service') : $request->input('date_service_membre');
     $remboursement->medecin = ($request->type == "pour_moi") ? $request->input('medecin') : $request->input('medecin_membre');
     $remboursement->montant = ($request->type == "pour_moi") ? $request->input('montant') : $request->input('montant_membre');
+    if($request->file('piece_jointe')<>null){
     $remboursement->piece_jointe = $fileName;
+  }
     $remboursement->assurer_id= Auth::user()->id;
 
     $remboursement->montant_total = ($request->type == "pour_moi") ? $request->input('montant_total') : $request->input('montant_total_membre');

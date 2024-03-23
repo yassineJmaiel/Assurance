@@ -99,4 +99,13 @@ public function showPatients()
 
     return view('listeassurer', compact('patients'));
 }
+
+public function delete($id){
+
+    $membre=assurer::find($id);
+    $user=User::where('assurer_id',$membre->id)->first();
+    $membre->delete();
+    $user->delete();
+    return redirect()->back()->with('success', 'Asssuré supprimé avec succés !');;
+  }
 }

@@ -46,4 +46,17 @@ public function ajout_membre(Request $request)
         $membre->save();
                 return redirect()->back()->with('success', 'Membre ajouté avec succés !');
     }
+
+    public function list(){
+
+      $membres=membreFamille::where('assurer_id',auth::user()->id)->get();
+      return view('liste_membres',compact('membres'));
+    }
+
+    public function delete($id){
+
+      $membres=membreFamille::find($id);
+      $membres->delete();
+      return redirect()->back()->with('success', 'Membre supprimé avec succés !');;
+    }
 }

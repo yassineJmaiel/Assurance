@@ -43,14 +43,19 @@
                                         <td>{{ $contact->tel }}</td>
                                         <td>{{ substr($contact->message, 0, 5) }}.... </td>
                                         <td>
+                                            <div> 
+                                        <a href="/deletecontact/{{$contact->id}}"><i class="far fa-trash-alt ms-text-danger"></i></a>
+</div> 
                                              @if($contact->read=="0")
-                                             <a href="/detailscontact/{{$contact->id}}">   <button type="button" class="btn btn-warning move-alert" style="margin-top: 1px;     margin-right: 10px;
+                                           <div style="margin-left:35px !important">  <a href="/detailscontact/{{$contact->id}}">   <button type="button" class="btn btn-warning move-alert" style="margin-top: 1px;     margin-right: 10px; background-color:#fda600
                                                 ">nouveau Message</button>  </a>
-                                             @else
-                                             <a href="/detailscontact/{{$contact->id}}">   <i class="fa fa-eye"></i>  </a>
+                                                </div>
 
+                                             @else
+                                             <div style="margin-top:10%">
+                                             <a href="/detailscontact/{{$contact->id}}">   <i class="fa fa-eye"></i>  </a>
+</div>
                                              @endif
-                                             <a href="/deletecontact/{{$contact->id}}"><i class="far fa-trash-alt ms-text-danger"></i></a>
 
                                         </td>
                                     </tr>

@@ -18,12 +18,16 @@ class BotManController extends Controller
    
             if ($message == 'hi') {
                 $this->askName($botman);
+            }elseif($message == 'how to change password') {
+                $this->askpassword($botman);
+                
+            } else{
+                $botman->reply("i dont understand you ");
             }
+
+
             
-            else{
-                $botman->reply("Start a conversation by saying hi.");
-            }
-   
+            
         });
    
         $botman->listen();
@@ -41,6 +45,21 @@ class BotManController extends Controller
             $this->say('Nice to meet you '.$name);
         });
     }
+
+    public function askpassword($botman)
+    {
+        $botman->ask('you want to learn how to change passowrd ??', function(Answer $answer) {
+   
+            if( $answer->getText()=="yes"){;
+   
+            $this->say('step 1 go to profile  , step 2 : change password ');
+             } else{
+                $this->say('i dont undertsand you ');
+
+             }
+        });
+    }
+
 
 
     

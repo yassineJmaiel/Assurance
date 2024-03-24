@@ -70,7 +70,7 @@
                                     <ul class="nav-menu">
                                         <li><a href="">Acceuil</a></li>
                                         <li><a href="/login">Se connecter</a> </li>
-                                        <li><a href="#rs-service">S'inscrire</a></li>
+                                        <li><a href="/register">S'inscrire</a></li>
                                         
                                         <li><a href="/contact">Contact</a> </li>
                                         

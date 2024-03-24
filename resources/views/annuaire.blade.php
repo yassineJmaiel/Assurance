@@ -6,11 +6,17 @@
         color: #333;
         margin: 0;
         padding: 0;
+       
+      }
+    .container{
+        margin-top: 50px;
+            margin-bottom: 40px;
     }
 
-    h1 {
+    h3 {
         text-align: center;
         color: #4285f4;
+       
     }
 
     form {
@@ -66,11 +72,11 @@
 
 <body>
     <div class="container">
-    <h1>Rechercher dans l'Annuaire</h1>
+    <h3>Rechercher dans l'Annuaire</h3>
 
     <form action="/search" method="GET">
         {{-- <label for="searchQuery">Search:</label> --}}
-        <input type="text" id="searchQuery" name="q" required>
+        <input placeholder="Rechercher" type="text" id="searchQuery" name="q" required>
         <button type="submit">Rechercher</button>
     </form>
 

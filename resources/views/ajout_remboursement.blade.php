@@ -12,8 +12,8 @@
                     <h6> Demande Remboursement</h6>
                 </div>
                 <div class="ms-panel-body">
-                    <form  method="post" action="/add_remboursement" enctype="multipart/form-data">
-                       @csrf
+                    <form method="post" action="/add_remboursement" enctype="multipart/form-data">
+                        @csrf
                         <div class="form-group">
                             <label for="radioPourMoi" class="mr-3">
                                 <input type="radio" id="radioPourMoi" name="type" value="pour_moi" checked> Pour moi
@@ -40,12 +40,22 @@
                                 <input type="number" class="form-control" id="montantPourMoi" name="montant">
                             </div>
                             <div class="form-group">
-                                <label for="montantTotalPourMoi">Montant total à rembourser</label>
-                                <input type="text" class="form-control" id="montantTotalPourMoi" name="montant_total" >
+                                <label for="tauxPourMoi">Taux</label>
+                                <select class="form-control" id="tauxPourMoi" name="taux" onchange="calculateTotal()">
+                                    <option> selectionner le taux </option>
+
+                                    <option value="0.70">70%</option>
+                                    <option value="0.80">80%</option>
+                                    <option value="0.90">90%</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="montantTotalMembreFamille">Piéce Jointe :</label>
-                                <input type="file" class="form-control" id="piecePourMoi" name="piece_jointe" >
+                                <label for="montantTotalPourMoi">Montant total à rembourser</label>
+                                <input type="text" class="form-control" id="montantTotalPourMoi" name="montant_total" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="piecePourMoi">Pièce Jointe :</label>
+                                <input type="file" class="form-control" id="piecePourMoi" name="piece_jointe">
                             </div>
                         </div>
 
@@ -53,11 +63,10 @@
                         <div id="membreFamilleFields" style="display:none;">
                             <div class="form-group">
                                 <label for="nomPrestataire">Nom membre famille</label>
-                                <select class="form-control"  name="id_membre">
+                                <select class="form-control" name="id_membre">
                                     @foreach ($membres as $membre)
                                     <option value="{{$membre->id}}"> {{$membre->nomPrenom}}</option>
                                     @endforeach
-                                    
                                 </select>
                             </div>
                             <div class="form-group">
@@ -77,11 +86,20 @@
                                 <input type="number" class="form-control" id="montantMembreFamille" name="montant_membre">
                             </div>
                             <div class="form-group">
-                                <label for="montantTotalMembreFamille">Montant total</label>
-                                <input type="text" class="form-control" id="montantTotalMembreFamille" name="montant_total_membre">
+                                <label for="tauxMembreFamille">Taux</label>
+                                <select class="form-control" id="tauxMembreFamille" name="taux_membre" onchange="calculateTotalMembre()">
+                                   <option> selectionner le taux </option>
+                                    <option value="0.70">70%</option>
+                                    <option value="0.80">80%</option>
+                                    <option value="0.90">90%</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="montantTotalMembreFamille">Piéce Jointe :</label>
+                                <label for="montantTotalMembreFamille">Montant total</label>
+                                <input type="text" class="form-control" id="montantTotalMembreFamille" name="montant_total_membre" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="pieceMembreFamille">Pièce Jointe :</label>
                                 <input type="file" class="form-control" id="pieceMembreFamille" name="piece_jointe_membre">
                             </div>
                         </div>
@@ -96,6 +114,20 @@
 </div>
 
 <script>
+    function calculateTotal() {
+        var montant = parseFloat(document.getElementById('montantPourMoi').value);
+        var taux = parseFloat(document.getElementById('tauxPourMoi').value);
+        var montantTotal = montant * taux;
+        document.getElementById('montantTotalPourMoi').value = montantTotal.toFixed(2);
+    }
+
+    function calculateTotalMembre() {
+        var montant = parseFloat(document.getElementById('montantMembreFamille').value);
+        var taux = parseFloat(document.getElementById('tauxMembreFamille').value);
+        var montantTotal = montant * taux;
+        document.getElementById('montantTotalMembreFamille').value = montantTotal.toFixed(2);
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
         const radioPourMoi = document.getElementById('radioPourMoi');
         const radioMembreFamille = document.getElementById('radioMembreFamille');
@@ -110,6 +142,17 @@
         radioMembreFamille.addEventListener('change', function () {
             pourMoiFields.style.display = 'none';
             membreFamilleFields.style.display = 'block';
+        });
+
+        const tauxMembreFamille = document.getElementById('tauxMembreFamille');
+        const montantMembreFamille = document.getElementById('montantMembreFamille');
+
+        tauxMembreFamille.addEventListener('change', function () {
+            calculateTotalMembre(); 
+        });
+
+        montantMembreFamille.addEventListener('input', function () {
+            calculateTotalMembre(); 
         });
     });
 </script>

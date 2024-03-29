@@ -59,4 +59,35 @@ public function ajout_membre(Request $request)
       $membres->delete();
       return redirect()->back()->with('success', 'Membre supprimé avec succés !');;
     }
+  
+    public function editMembre($id)
+    {
+        $membre = membreFamille::find($id);
+        $infos = assurer::where('email', '=', auth::user()->email)->first();
+        return view('edit_member', compact('membre', 'infos'));
+    }
+    
+    public function updateMembre(Request $request, $id)
+    {
+        $membre = membreFamille::find($id);
+    
+        $membre->nomPrenom = $request->input('nomPrenom');
+        $membre->dateNaissance = $request->input('dateNaissance');
+        $membre->telephone = $request->input('telephone');
+        $membre->adresse = $request->input('adresse');
+        $membre->cin = $request->input('cin');
+        $membre->situation = $request->input('situation');
+        $membre->genre = $request->input('genre');
+        $membre->email = $request->input('email');
+        $membre->relation = $request->input('relation');
+    
+        $membre->save();
+    
+        return redirect()->route('liste_membres')->with('success', 'Membre mis à jour avec succès !');
+
+    }
+    
+
+
+
 }

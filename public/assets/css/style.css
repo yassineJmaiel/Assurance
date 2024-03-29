@@ -21,7 +21,7 @@ Version: 1.0.0
         - Quickbar
       - Footer
       - Dropdowns
-    * Widgets
+    * Widgetsget
     * Forms
       - Form Elements
       - Form Validation
@@ -1491,6 +1491,7 @@ ul.ms-activity-log>li:hover .icon {
 /* Quick Bar */
 .ms-quick-bar {
   height: 100%;
+ 
   left: auto;
   top: 0;
   right: 0;
@@ -6345,8 +6346,10 @@ li .ms-count {
 }
 
 .ms-widget .ms-chat-header {
-  display: flex;
+  bottom: 40px; 
+ 
 }
+
 
 .ms-chat-container .ms-chat-header {
   display: block;

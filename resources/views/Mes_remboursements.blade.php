@@ -67,9 +67,9 @@
 
 
                                         <td>
-                                            <a href="#">
+                                        <!--   <a href="#">
                                                 <i class="fas fa-pencil-alt ms-text-primary"></i>
-                                            </a>
+                                            </a>-->  
                                             <a href="">
                                                 <i class="far fa-trash-alt ms-text-danger"></i>
                                             </a>

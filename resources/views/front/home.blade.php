@@ -68,7 +68,7 @@
                             <div class="rs-header-rightside">
                                 <div class="main-menu hidden-md">
                                     <ul class="nav-menu">
-                                        <li><a href="">Acceuil</a></li>
+                                        <li><a href="/">Acceuil</a></li>
                                         <li><a href="/login">Se connecter</a> </li>
                                         <li><a href="/register">S'inscrire</a></li>
                                         

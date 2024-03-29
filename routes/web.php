@@ -51,12 +51,21 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/annuaire', function () {
         return view('annuaire');
     });
+    Route::get('/Con_Dashboard', function () {
+        return view('Con_Dashboard');
+    });
     
     Route::post('reponse', [ReponseDemandeController::class, 'store']);
     Route::get('list_reponses', [ReponseDemandeController::class, 'reponses']);
     Route::get('liste_membre', [MembreFamilleController::class, 'list']);
     Route::get('deletemembre/{id}', [MembreFamilleController::class, 'delete']);
-    Route::get('deleteAssuré/{id}', [AssurerController::class, 'delete']);
+    Route::get('/edit_member/{id}', [MembreFamilleController::class, 'editMembre'])->name('edit_member');
+    Route::match(['post', 'put'], 'update_membre/{id}', [MembreFamilleController::class, 'updateMembre'])->name('update_membre');
+    Route::get('/liste_membres', [MembreFamilleController::class, 'list'])->name('liste_membres');
+
+
+     Route::get('deleteAssuré/{id}', [AssurerController::class, 'delete']);
+    
 
 
 

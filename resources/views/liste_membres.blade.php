@@ -42,6 +42,7 @@
                                         <td>{{ $membre->relation }}</td>
                                         <td> 
                                             <a href="/deletemembre/{{$membre->id}}"><i class="far fa-trash-alt ms-text-danger"></i></a>
+                                            <a href="/edit_member/{{$membre->id}}"><i class="far fa-edit ms-text-primary"></i></a>
 
                                         </td>
                                     </tr>

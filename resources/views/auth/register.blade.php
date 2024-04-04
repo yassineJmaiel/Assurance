@@ -1,6 +1,26 @@
 @extends('front.theme')
 
 @section('content')
+<style>
+    .btn-custom {
+        color: #fff !important; /* Couleur du texte du bouton */
+    }
+
+    .card {
+        background-color: #f8f9fa; /* Couleur de fond de la carte */
+        border: 1px solid #ced4da; /* Bordure de la carte */
+        border-radius: 10px; /* Arrondi des coins de la carte */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre de la carte */
+        padding: 20px; /* Espacement interne de la carte */
+    }
+
+    .card .card-header {
+        background-color: #3490dc; /* Couleur de fond du card-header */
+        color: #fff; /* Couleur du texte du card-header */
+        border-bottom: none; /* Supprimer la bordure inférieure du card-header */
+      
+    }
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -62,13 +82,28 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
+                       
+                        <div class="row mb-3">
+    <label for="verification" class="col-md-4 col-form-label text-md-end">{{ __('Vérification') }}</label>
+
+    <div class="col-md-6">
+        <input id="verification" type="text" class="form-control @error('verification') is-invalid @enderror" name="verification" required>
+        
+        @error('verification')
+            <span class="invalid-feedback" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+    </div>
+</div>
+<div class="row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
                                     S'inscrire
                                 </button>
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>

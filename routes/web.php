@@ -62,9 +62,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/edit_member/{id}', [MembreFamilleController::class, 'editMembre'])->name('edit_member');
     Route::match(['post', 'put'], 'update_membre/{id}', [MembreFamilleController::class, 'updateMembre'])->name('update_membre');
     Route::get('/liste_membres', [MembreFamilleController::class, 'list'])->name('liste_membres');
-
-
-     Route::get('deleteAssuré/{id}', [AssurerController::class, 'delete']);
+    Route::get('/assureurs/{id}/edit', [AssurerController::class, 'edit'])->name('assureurs.edit');
+    Route::put('/assureurs/{assureur}', [AssurerController::class, 'update'])->name('assureurs.update');
+    Route::get('/listeassurer', [AssurerController::class, 'showPatients'])->name('listeassurer');
+    Route::get('deleteAssuré/{id}', [AssurerController::class, 'delete']);
+   
     
 
 

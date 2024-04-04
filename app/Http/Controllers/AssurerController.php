@@ -108,4 +108,39 @@ public function delete($id){
     $user->delete();
     return redirect()->back()->with('success', 'Asssuré supprimé avec succés !');;
   }
+
+  public function edit($id)
+  {
+      $assure = Assurer::findOrFail($id);
+      return view('editAssure', compact('assure'));
+  }
+  public function update(Request $request, $id)
+  {
+      $assure = Assurer::findOrFail($id);
+     
+  
+      // Mettre à jour les informations de l'assuré
+     
+      $assure->nomPrenom = $request->input('nomPrenom');
+      $assure->dateNaissance = $request->input('dateNaissance');
+      $assure->email = $request->input('email');
+      $assure->telephone = $request->input('telephone');
+      $assure->adresse = $request->input('adresse');
+      $assure->cin = $request->input('cin');
+      $assure->situation = $request->input('situation');
+      $assure->genre = $request->input('genre');
+      $assure->numeroContrat = $request->input('numeroContrat');
+      $assure->dateDebutContrat = $request->input('dateDebutContrat');
+      $assure->dateFinContrat = $request->input('dateFinContrat');
+  
+      // Vérifiez si le champ 'typeAssurance' est fourni dans la requête
+      if ($request->has('typeAssurance')) {
+          $assure->typeAssurance = $request->input('typeAssurance');
+      }
+      $assure->save();
+  
+      return redirect()->route('listeassurer')->with('success', 'Informations de l\'assuré mises à jour avec succès.');
+  }
+    
+
 }

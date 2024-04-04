@@ -364,7 +364,7 @@
 
       
 
-        <li class="ms-nav-item dropdown">
+   <!--    <li class="ms-nav-item dropdown">
           <a href="#" class="text-disabled ms-has-notification" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-bell"></i></a>
           <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="notificationDropdown">
             <li class="dropdown-menu-header">
@@ -403,7 +403,8 @@
               <a href="#">View all Notifications</a>
             </li>
           </ul>
-        </li>
+        </li>-->
+        
         <li class="ms-nav-item ms-nav-user dropdown">
           <a href="#" id="userDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="ms-user-img ms-img-round float-right" src="/assets/avatar.png" alt="people"> </a>
           <ul class="dropdown-menu dropdown-menu-right user-dropdown" aria-labelledby="userDropdown">

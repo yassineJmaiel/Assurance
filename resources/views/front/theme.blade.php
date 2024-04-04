@@ -88,9 +88,9 @@
                                     <ul class="nav-menu">
                                         <li><a href="/">Acceuil</a></li>
                                         <li><a href="/login">Se connecter</a> </li>
-                                        <li><a href="/register">S'inscrire</a></li>
+                                        <li><a href="/register">Espace Assureur</a></li>
                                         
-                                        <li><a href="/contact">Contact</a> </li>
+                                        <li><a href="/contact">Contacter nous</a> </li>
                                     </ul> <!-- //.nav-menu -->
                                 </div>
                                 <div class="rs-header-social">
@@ -136,12 +136,11 @@
             </div>
             <div class="off-canvas-menu">
                 <ul class="nav-menu">
-                    <li><a href="#rs-header">Home</a></li>
-                    <li><a href="#rs-about">About</a></li>
-                    <li><a href="#rs-service">Services</a></li>
-                    <li><a href="#rs-project">Project</a></li>
-                    <li><a href="#rs-blog">Blog</a></li>
-                    <li><a href="#rs-contact">Contact</a> </li>
+                <li><a href="/">Acceuil</a></li>
+                                        <li><a href="/login">Se connecter</a> </li>
+                                        <li><a href="/register">Espace assureur</a></li>
+                                        
+                                        <li><a href="/contact">Contacter nous</a> </li>
                 </ul> <!-- //.nav-menu -->
             </div>
             <div class="widget gallery-widget">
@@ -227,11 +226,10 @@
                 <div class="col-lg-6">
                     <div class="rs-banner__content">
                         <div class="top-heading wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
-                            <span> We Are Insurance Solution Company </span>
+                            <span> Compagnie d'assurance Tunisienne </span>
                         </div>
-                        <h1 class="title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">You are Ready to Get Your <span>Insurance</span></h1>
-                        <a class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" href="about-1.html">Let’s Get Started <i class="ri-arrow-right-line"></i></a>
-                    </div>
+                        <h1 class="title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">Une assurance santé qui vous couvre en toutes  <span>circonstances</span></h1>
+                        <!-- <a id="popup" class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" href="#" o>En savoir plus <i class="ri-arrow-right-line"></i></a>                    </div> -->
                 </div>
             </div>
         </div>
@@ -255,7 +253,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="rs-footer__about">
                         <a href="index-2.html"><img src="assetsfront/images/logo_home2.png" alt=""></a>
-                        <p class="desc">There are many variations of pass ages of Lorem Ipsum available, but the majority have suffered alteration in some form working insurigo</p>
+                        <p class="desc">"Protégez votre avenir avec Insurigo - votre partenaire de confiance pour une assurance complète et fiable. Ensemble, nous garantissons votre tranquillité d'esprit."</p>
                         <ul>
                             <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
                             <li><a href="#"><i class="ri-twitter-x-fill"></i></a></li>
@@ -264,45 +262,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <div class="rs-footer__navigation">
-                        <h4 class="title">Quick link</h4>
-                        <ul>
-                            <li><a href="about-1.html">About Us <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="pricing.html">Our Pricing <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="faq.html">Our Mission <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="blog.html">Latest News <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="contact.html">Contact Us <i class="ri-arrow-right-line"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="rs-footer__navigation item-2">
-                        <h4 class="title">Our Services</h4>
-                        <ul>
-                            <li><a href="travel-insurance.html">Travel Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="life-insurance.html">Life Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="house-insurance.html">House Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="car-insurance.html">Car Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="family-insurance.html">Family Insurance <i class="ri-arrow-right-line"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="rs-footer__contact">
-                        <h4 class="title">Get In Touch</h4>
+               
+                
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="rs-footer__contact ">
+                        <h4 class="title">Contacter nous</h4>
                         <ul>
                             <li>
                                 <div class="rs-icon">
                                     <i class="ri-map-2-line"></i>
                                 </div>
-                                <span>374 William S Canning Blvd, Fall River MA 2721, USA </span>
+                                <span>64, rue de Palestine 1002 Tunis </span>
                             </li>
                             <li>
                                 <div class="rs-icon">
                                     <i class="ri-phone-line"></i>
                                 </div>
-                                <a href="tel:+880155-69569">(+880)155-69569</a>
+                                <a href="tel:+880155-69569">+216 71 788 800</a>
                             </li>
                             <li>
                                 <div class="rs-icon">
@@ -310,12 +286,7 @@
                                 </div>
                                 <a href="mailto:isurigo@gmail">isurigo@gmail.com</a>
                             </li>
-                            <li>
-                                <div class="rs-icon">
-                                    <i class="ri-corner-down-right-line"></i>
-                                </div>
-                                <a href="about-1.html">More Information</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -326,7 +297,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="rs-footer__copyright-text">
-                                    <p>© 2024 Insurigo. Designed By <a href="https://rstheme.com/" target="_blank">RSTheme.</a></p>
+                                    <p>© 2024 Insurigo Assurance Santé</a></p>
                                 </div>
                             </div>
                             <div class="col-lg-6">

@@ -70,9 +70,9 @@
                                     <ul class="nav-menu">
                                         <li><a href="/">Acceuil</a></li>
                                         <li><a href="/login">Se connecter</a> </li>
-                                        <li><a href="/register">S'inscrire</a></li>
+                                        <li><a href="/register">Espace assureur</a></li>
                                         
-                                        <li><a href="/contact">Contact</a> </li>
+                                        <li><a href="/contact">Contacter nous</a> </li>
                                         
 
                                     </ul> <!-- //.nav-menu -->
@@ -116,16 +116,15 @@
             <a href="#" class="off-canvas-close"><i class="ri-close-line"></i></a>
             <div class="widget about-widget">
                 <a href="index-3.html"><img src="assetsfront/images/logo-2.png" alt=""></a>
-                <p class="mt-20 mb-20">Lorsque nous nous rendons au bureau chaque jour, nous perpétuons une tradition importante et valorisée. Nous prenons le temps de connaître personnellement nos clients en utilisant leur prénom, ce qui établit un lien de confiance essentiel. De cette manière, nous pouvons répondre de manière plus efficace et adaptée à leurs besoins en matière d'assurance</p>
+                <p class="mt-20 mb-20">Votre santé et votre sécurité sont notre priorité absolue. Chez Insurigo, nous nous engageons à fournir des solutions d'assurance médicale simples, efficaces et adaptées à vos besoins. Notre équipe dévouée travaille chaque jour pour garantir votre tranquillité d'esprit et votre bien-être.</p>
             </div>
             <div class="off-canvas-menu">
                 <ul class="nav-menu">
-                    <li><a href="#rs-header">Home</a></li>
-                    <li><a href="#rs-about">About</a></li>
-                    <li><a href="#rs-service">Services</a></li>
-                    <li><a href="#rs-project">Project</a></li>
-                    <li><a href="#rs-blog">Blog</a></li>
-                    <li><a href="#rs-contact">Contact</a> </li>
+                <li><a href="/">Acceuil</a></li>
+                                        <li><a href="/login">Se connecter</a> </li>
+                                        <li><a href="/register">Espace assureur</a></li>
+                                        
+                                        <li><a href="/contact">Contacter nous</a> </li>
                     
 
                 </ul> <!-- //.nav-menu -->
@@ -154,19 +153,19 @@
                 <ul>
                     <li>
                         <i class="ri-map-pin-2-line"></i>
-                        305 Royal Track Suite 019, USA
+                        64, rue de Palestine 1002 Tunis
                     </li>
                     <li>
                         <i class="ri-phone-line"></i>
-                        <a href="tel:+10910910920">+10910-910920</a>
+                        <a href="tel:+10910910920">+216 71 788 800</a>
                     </li>
                     <li>
                         <i class="ri-mail-send-line"></i>
-                        <a href="mailto:info@company.com">info@company.com</a>
+                        <a href="mailto:info@company.com">isurigo@gmail.com</a>
                     </li>
                     <li>
                         <i class="ri-time-line"></i>
-                        10:00 - 19:00
+                        08:00 - 17:00
                     </li>
                 </ul>
             </div>
@@ -216,7 +215,28 @@
                             <span> Compagnie d'assurance Tunisienne </span>
                         </div>
                         <h1 class="title wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">Une assurance santé qui vous couvre en toutes  <span>circonstances</span></h1>
-                        <a class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" href="about-1.html">En savoir plus <i class="ri-arrow-right-line"></i></a>
+<!-- Bouton pour ouvrir le pop-up -->
+<!-- <a href="register" class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">En savoir plus <i class="ri-arrow-right-line"></i></a> -->
+
+<!-- <a href="#" id="accessButton" class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">Enter Protected Interface <i class="ri-arrow-right-line"></i></a> -->
+
+<!-- Modal -->
+<!-- <div id="accessModal" class="modal">
+    <div class="modal-content">
+       
+        <h2>Entrez le code d'accès</h2>
+        <form id="accessCodeForm">
+            <input type="text" id="accessCode" name="access_code" placeholder="Entrez le code d'accès">
+            <button type="submit">Soumettre</button>
+        </form>
+        <div id="errorMessage" style="color: red; display: none;">Code d'accès invalide.</div>
+    </div>
+</div>  -->
+
+
+
+
+<!-- Pop-up -->
                     </div>
                 </div>
             </div>
@@ -279,16 +299,16 @@
                 <div class="col-lg-7">
                     <div class="rs-about-2__content pl-85">
                         <span>"À Propos de Notre Entreprise "</span>
-                        <h2 class="title">"Nos Offres d'Assurance Santé : Protégez Votre Bien-être"</h2>
-                        <p>Placerat vestibulum lectus mauris ultrices eros in condimentum mattis pellentesque id nibh. Massa id neque aliquam vestibulum morbi In ante metus dictum at tempor.</p>
+                        <h2 class="title">Optimisation de l'Expérience Client : Simplification des Services d'Assurance Santé avec un Chatbot et un Processus de Remboursement Efficace</h2>
+                        <p>Une assurance santé qui propose un service rapide et simple, avec un chatbot comme guide d'utilisation, ainsi qu'un processus de demande de remboursement facile et une consultation des demandes en toute simplicité, incluant également un annuaire pour trouver des liens de recherche.</p>
                         <div class="rs-links">
-                            <a class="main-btn" href="about-1.html">Learn More <i class="ri-arrow-right-line"></i></a>
+                            
                             <div class="rs-about-contact">
                                 <a href="tel:+009800780423">
                                     <div class="rs-icon"><i class="ri-phone-line"></i></div>
                                     <div class="rs-content">
                                         <span>Need Help?</span>
-                                        <h4 class="title">+00 9800 7804 23</h4>
+                                        <h4 class="title">+216 71 788 800</h4>
                                     </div>
                                 </a>
                             </div>
@@ -302,79 +322,81 @@
 
     <!--===== Mission Vision Start =====-->
     <section class="rs-mission-vision pb-115">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <div class="rs-mission-vision__content">
-                        <span> Company Journey</span>
-                        <h2 class="title">We’re a trusted and professional insurance company</h2>
-                        <p>Placerat vestibulum lectus mauris ultrices eros in condimentum mattis pellentesque id nibh. Massa id neque aliquam vestibulum</p>
-                        <a class="main-btn" href="tab-style-3.html">Learn More <i class="ri-arrow-right-line"></i></a>
-                    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <div class="rs-mission-vision__content">
+                    <span>Notre Parcours</span>
+                    <h2 class="title">Nous sommes une compagnie d'assurance médicale de confiance et professionnelle</h2>
+                    <p>Offrir une protection médicale complète et fiable est notre priorité. Nous nous engageons à assurer votre tranquillité d'esprit en matière de santé.</p>
+                 
                 </div>
-                <div class="col-lg-7">
-                    <div class="rs-mission-vision__tabs wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <div id="rs-tabs" class="rs-tab-active skltbs-theme-light use-drop skltbs-mode-tabs skltbs-init">
-                            <!-- tabGroup -->
-                            <ul class="skltbs-tab-group">
-                                <!-- tabItem -->
-                                <li class="skltbs-tab-item">
-                                    <!-- tab -->
-                                    <button class="skltbs-tab">Our Mission</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab">Our Vision</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab">Our Values</button>
-                                </li>
-                            </ul>
-                            <!-- panelGroup -->
-                            <div class="skltbs-panel-group">
-                                <!-- panel -->
-                                <div class="skltbs-panel">
-                                    <div class="rs-mission-vision-tab-content">
-                                        <div class="rs-thumb">
-                                            <img src="assetsfront/images/tab-thumb-1.jpg" alt="">
-                                        </div>
-                                        <div class="rs-list">
-                                            <ul>
-                                                <li><i class="ri-check-double-line"></i> Your business deserves best software</li>
-                                                <li><i class="ri-check-double-line"></i> We provide awesome services</li>
-                                                <li><i class="ri-check-double-line"></i> Solve your problem with us</li>
-                                                <li><i class="ri-check-double-line"></i> Life time support</li>
-                                            </ul>
-                                        </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="rs-mission-vision__tabs wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                    <div id="rs-tabs" class="rs-tab-active skltbs-theme-light use-drop skltbs-mode-tabs skltbs-init">
+                        <!-- Groupe de onglets -->
+                        <ul class="skltbs-tab-group">
+                            <!-- Onglet 1 -->
+                            <li class="skltbs-tab-item">
+                                <button class="skltbs-tab">Notre Mission</button>
+                            </li>
+                            <!-- Onglet 2 -->
+                            <li class="skltbs-tab-item">
+                                <button class="skltbs-tab">Notre Vision</button>
+                            </li>
+                            <!-- Onglet 3 -->
+                            <li class="skltbs-tab-item">
+                                <button class="skltbs-tab">Nos Valeurs</button>
+                            </li>
+                        </ul>
+                        <!-- Groupe de panneaux -->
+                        <div class="skltbs-panel-group">
+                            <!-- Panneau 1 -->
+                            <div class="skltbs-panel">
+                                <div class="rs-mission-vision-tab-content">
+                                    <div class="rs-thumb">
+                                        <img src="assetsfront/images/tab-thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="rs-list">
+                                        <ul>
+                                            <li><i class="ri-check-double-line"></i> Offrir les meilleures solutions médicales pour votre entreprise</li>
+                                            <li><i class="ri-check-double-line"></i> Fournir des services de qualité exceptionnelle</li>
+                                            <li><i class="ri-check-double-line"></i> Résoudre vos problèmes de santé avec nous</li>
+                                            <li><i class="ri-check-double-line"></i> Support à vie</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-mission-vision-tab-content">
-                                        <div class="rs-thumb">
-                                            <img src="assetsfront/images/tab-thumb-2.png" alt="">
-                                        </div>
-                                        <div class="rs-list">
-                                            <ul>
-                                                <li><i class="ri-check-double-line"></i> Your business deserves best software</li>
-                                                <li><i class="ri-check-double-line"></i> We provide awesome services</li>
-                                                <li><i class="ri-check-double-line"></i> Solve your problem with us</li>
-                                                <li><i class="ri-check-double-line"></i> Life time support</li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <!-- Panneau 2 -->
+                            <div class="skltbs-panel">
+                                <div class="rs-mission-vision-tab-content">
+                                    <div class="rs-thumb">
+                                        <img src="assetsfront/images/tab-thumb-2.png" alt="">
+                                    </div>
+                                    <div class="rs-list">
+                                        <ul>
+                                            <li><i class="ri-check-double-line"></i> Réaliser une vision d'un avenir plus sain pour tous</li>
+                                            <li><i class="ri-check-double-line"></i> Être le leader de l'innovation en matière de soins de santé</li>
+                                            <li><i class="ri-check-double-line"></i> Garantir l'accès équitable à des soins de qualité</li>
+                                            <li><i class="ri-check-double-line"></i> Collaborer avec les partenaires pour améliorer la santé communautaire</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-mission-vision-tab-content">
-                                        <div class="rs-thumb">
-                                            <img src="assetsfront/images/tab-thumb-3.png" alt="">
-                                        </div>
-                                        <div class="rs-list">
-                                            <ul>
-                                                <li><i class="ri-check-double-line"></i> Your business deserves best software</li>
-                                                <li><i class="ri-check-double-line"></i> We provide awesome services</li>
-                                                <li><i class="ri-check-double-line"></i> Solve your problem with us</li>
-                                                <li><i class="ri-check-double-line"></i> Life time support</li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <!-- Panneau 3 -->
+                            <div class="skltbs-panel">
+                                <div class="rs-mission-vision-tab-content">
+                                    <div class="rs-thumb">
+                                        <img src="assetsfront/images/tab-thumb-3.png" alt="">
+                                    </div>
+                                    <div class="rs-list">
+                                        <ul>
+                                            <li><i class="ri-check-double-line"></i> Respecter l'éthique médicale dans toutes nos actions</li>
+                                            <li><i class="ri-check-double-line"></i> Agir avec intégrité et honnêteté envers nos clients</li>
+                                            <li><i class="ri-check-double-line"></i> Promouvoir la diversité et l'inclusion dans notre entreprise</li>
+                                            <li><i class="ri-check-double-line"></i> Être responsable envers la communauté et l'environnement</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -383,7 +405,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!--===== Mission Vision Ends =====-->
 
    
@@ -396,21 +420,19 @@
                 <div class="col-lg-6">
                     <div class="rs-why-choose-2__content">
                         <div class="section-title-2">
-                            <span> Why Choose Us</span>
-                            <h2 class="title">Today any health insurance deductible can feel like a high deductible.</h2>
-                            <p> We help you build for better future life. Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like aldus pageMaker. </p>
+                            <span> Insurigo</span>
+                            <h2 class="title"> Actuellement, les franchises d'assurance santé peuvent toutes donner l'impression d'être élevées.</h2>
+                            <p> Nous vous accompagnons dans la construction d'une vie future meilleure </p>
                         </div>
                         <div class="rs-why-choose-icon-box">
                             <img src="assetsfront/images/title_icon.png" alt="">
-                            <span>Business Growth</span>
+                            <span>Expansion d'entreprise</span>
                         </div>
                         <div class="skillbar" data-percent="75">
                             <p class="skillbar-bar"></p>
                             <span class="skill-bar-percent"></span>
                         </div>
-                        <div class="rs-link">
-                            <a href="pricing.html">See Our Plan <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.0s">
@@ -418,29 +440,30 @@
                         <div class="chart-item">
                             <div class="skillbar" data-percent="50">
                                 <p class="skillbar-bar">
-                                    <span>$1000</span>
+                                    <span>1000TND</span>
                                 </p>
                             </div>
                         </div>
                         <div class="chart-item item-2">
                             <div class="skillbar" data-percent="70">
                                 <p class="skillbar-bar">
-                                    <span>$2300</span>
+                                    <span>2300TND</span>
                                 </p>
                             </div>
                         </div>
                         <div class="chart-item">
                             <div class="skillbar" data-percent="100">
                                 <p class="skillbar-bar">
-                                    <span>$3500</span>
+                                    <span>3500TND</span>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="rs-why-choose-2__titles">
-                        <span>Deductible</span>
-                        <span class="ml-30">Monthly</span>
-                        <span class="ml-55">Annual Max</span>
+                    <span>Franchise</span>
+                    <span class="ml-30">Mensuel</span>
+                   <span class="ml-55">Maximum Annuel</span>
+
                     </div>
                 </div>
             </div>
@@ -455,8 +478,8 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
                     <div class="section-title-2 mb-20">
-                        <span> What We Offer</span>
-                        <h2 class="title">We’re covering all the insurance services fields</h2>
+                        <span> INSURIGO</span>
+                        <h2 class="title">"Nous offrons une couverture pour tous les âges et toutes les situations en matière de santé."</h2>
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -530,12 +553,10 @@
             <div class="row mb-55">
                 <div class="col-lg-5">
                     <div class="rs-counter-2__author">
-                        <div class="rs-thumb">
-                            <img src="assetsfront/images/testimonial_author.jpg" alt="">
-                        </div>
+                        
                         <div class="rs-content">
-                            <h4 class="title">Aleesha brown.</h4>
-                            <span> Founder of Insurigo</span>
+                            <h4 class="title">Insurigo Tunisie</h4>
+                            <span>Excellence en Assurance :</span>
                         </div>
                         <div class="rs-shape-2">
                             <img src="assetsfront/images/star-1.png" alt="">
@@ -544,553 +565,251 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="rs-counter-2__author-text">
-                        <P><span>8.62m+</span> clients experience insurance excellence by us. Trusted services, customer-focused solutions, and a legacy of financial reliability.</P>
+                    <p><span>Plus de 8,62 millions de clients</span> ont vécu l'excellence de nos services d'assurance. Des solutions fiables et axées sur le client, et une histoire de fiabilité financière.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="rs-counter-2__item mt-40 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <div class="rs-icon">
-                            <img src="assetsfront/images/counter-icon-1.png" alt="">
-                        </div>
-                        <div class="rs-counter">
-                            <h2 class="title"> <span class="odometer" data-count="197">00</span>+</h2>
-                        </div>
-                        <div class="rs-content">
-                            <h4 class="title">Global country</h4>
-                            <p>Placerat vestibulum lectus mauris</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="rs-counter-2__item mt-40 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="rs-icon">
-                            <img src="assetsfront/images/counter-icon-2.png" alt="">
-                        </div>
-                        <div class="rs-counter">
-                            <h2 class="title"> <span class="odometer" data-count="120">00</span>+</h2>
-                        </div>
-                        <div class="rs-content">
-                            <h4 class="title">Company Growth</h4>
-                            <p> Placerat vestibulum lectus mauris</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="rs-counter-2__item mt-40 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <div class="rs-icon">
-                            <img src="assetsfront/images/counter-icon-3.png" alt="">
-                        </div>
-                        <div class="rs-counter">
-                            <h2 class="title"> <span class="odometer" data-count="25">00</span>K+</h2>
-                        </div>
-                        <div class="rs-content">
-                            <h4 class="title">Satisfied Customer</h4>
-                            <p> Placerat vestibulum lectus mauris</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="rs-counter-2__item mt-40 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="rs-icon">
-                            <img src="assetsfront/images/counter-icon-4.png" alt="">
-                        </div>
-                        <div class="rs-counter">
-                            <h2 class="title"> <span class="odometer" data-count="99">00</span>%</h2>
-                        </div>
-                        <div class="rs-content">
-                            <h4 class="title">Satisfaction Rate</h4>
-                            <p>Placerat vestibulum lectus mauris</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="col-lg-6">
+        <div class="rs-counter-2__item mt-40 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+            <div class="rs-icon">
+                <img src="assetsfront/images/counter-icon-1.png" alt="">
+            </div>
+            <div class="rs-counter">
+                <h2 class="title"> <span class="odometer" data-count="197">00</span>+</h2>
+            </div>
+            <div class="rs-content">
+                <h4 class="title">Pays mondial</h4>
+                <p>Expérience de plus de 197 millions de clients</p>
             </div>
         </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="rs-counter-2__item mt-40 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
+            <div class="rs-icon">
+                <img src="assetsfront/images/counter-icon-2.png" alt="">
+            </div>
+            <div class="rs-counter">
+                <h2 class="title"> <span class="odometer" data-count="120">00</span>+</h2>
+            </div>
+            <div class="rs-content">
+                <h4 class="title">Croissance de l'entreprise</h4>
+                <p>Épanouissement continu : notre entreprise évolue et prospère sans cesse.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="rs-counter-2__item mt-40 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+            <div class="rs-icon">
+                <img src="assetsfront/images/counter-icon-3.png" alt="">
+            </div>
+            <div class="rs-counter">
+                <h2 class="title"> <span class="odometer" data-count="25">00</span>K+</h2>
+            </div>
+            <div class="rs-content">
+                <h4 class="title">Clients satisfaits</h4>
+                <p>Plus de 25 000 clients satisfaits</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="rs-counter-2__item mt-40 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
+            <div class="rs-icon">
+                <img src="assetsfront/images/counter-icon-4.png" alt="">
+            </div>
+            <div class="rs-counter">
+                <h2 class="title"> <span class="odometer" data-count="99">00</span>%</h2>
+            </div>
+            <div class="rs-content">
+                <h4 class="title">Taux de satisfaction</h4>
+                <p>Taux de satisfaction de 99%</p>
+            </div>
+        </div>
+    </div>
+</div>
+
     </section>
     <!-- ==== Counter 2 Section Ends ==== -->
 
-    <!-- ==== Compare 2 Section Start ==== -->
-    <section class="rs-compare-2 pt-115 pb-120" id="rs-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title-2">
-                        <span>Get an Insurance Quote</span>
-                        <h2 class="title">Compare quotes and get life insurance in right way.</h2>
-                    </div>
-                    <div class="rs-compare-2__tabs">
-                        <div id="rs-tabs-2" class="rs-tab-active skltbs-theme-light use-drop skltbs-mode-tabs skltbs-init">
-                            <!-- tabGroup -->
-                            <ul class="skltbs-tab-group">
-                                <!-- tabItem -->
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab"><i class="ri-home-8-line"></i> Home</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab"><i class="ri-line-chart-line"></i> Business</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab"><i class="ri-user-line"></i> Life</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab"><i class="ri-ship-line"></i> Ship</button>
-                                </li>
-                                <li class="skltbs-tab-item">
-                                    <button class="skltbs-tab"><i class="ri-add-line"></i> And More</button>
-                                </li>
-                            </ul>
-                            <!-- panelGroup -->
-                            <div class="skltbs-panel-group">
-                                <!-- panel -->
-                                <div class="skltbs-panel">
-                                    <div class="rs-compare-tab-form">
-                                        <h4 class="title">Home insurance Quote:</h4>
-                                        <form id="contact-form" action="https://demo.rstheme.com/html/insurigo/assetsfront/php/contact.php" method="post">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label for="name">Full Name*</label>
-                                                        <input id="name" name="name" type="text" placeholder="Your Name Here" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label for="phone">Phone*</label>
-                                                        <input id="phone" name="phone" type="text" placeholder="Your Phone Number" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label for="email">E-mail*</label>
-                                                        <input id="email" name="email" type="email" placeholder="Your Email Here" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label for="subject">Subject*</label>
-                                                        <input id="subject" name="subject" type="text" placeholder="Enter Subject" required>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="input-box">
-                                                        <div class="range-slider">
-                                                            <label class="range-slider__label">Limits Of Balance ($)</label>
-                                                            <input id="balance-limits" class="range-slider__range" name="balance_limits" type="range" value="6000" min="0" max="10000">
-                                                            <span class="range-slider__value">0</span>
-                                                        </div>
-                                                        <button type="submit" class="main-btn">Get a Quote Now <i class="ri-arrow-right-up-line"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        <p id="form-messages" class="form-message mt-15"></p>
-                                    </div>
-                                </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-compare-tab-form">
-                                        <h4 class="title">Business insurance Quote:</h4>
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Full Name*</label>
-                                                        <input type="text" placeholder="Your Name Here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Phone*</label>
-                                                        <input type="text" placeholder="Your phone number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>E-mail*</label>
-                                                        <input type="email" placeholder="Your email here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Subject*</label>
-                                                        <input type="text" placeholder="Enter subject">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="input-box">
-                                                        <div class="range-slider">
-                                                            <label class="range-slider__label  ">Limits Of Balance ($)</label>
-                                                            <input class="range-slider__range" type="range" value="6000" min="0" max="10000">
-                                                            <span class="range-slider__value">0</span>
-                                                        </div>
-                                                        <button type="submit" class="main-btn">Get a Quote Now <i class="ri-arrow-right-up-line"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-compare-tab-form">
-                                        <h4 class="title">Life insurance Quote:</h4>
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Full Name*</label>
-                                                        <input type="text" placeholder="Your Name Here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Phone*</label>
-                                                        <input type="text" placeholder="Your phone number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>E-mail*</label>
-                                                        <input type="email" placeholder="Your email here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Subject*</label>
-                                                        <input type="text" placeholder="Enter subject">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="input-box">
-                                                        <div class="range-slider">
-                                                            <label class="range-slider__label  ">Limits Of Balance ($)</label>
-                                                            <input class="range-slider__range" type="range" value="6000" min="0" max="10000">
-                                                            <span class="range-slider__value">0</span>
-                                                        </div>
-                                                        <button type="submit" class="main-btn">Get a Quote Now <i class="ri-arrow-right-up-line"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-compare-tab-form">
-                                        <h4 class="title">Ship insurance Quote:</h4>
-                                        <form action="#">
-                                            <div class="row">
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Full Name*</label>
-                                                        <input type="text" placeholder="Your Name Here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Phone*</label>
-                                                        <input type="text" placeholder="Your phone number">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>E-mail*</label>
-                                                        <input type="email" placeholder="Your email here">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6">
-                                                    <div class="input-box">
-                                                        <label>Subject*</label>
-                                                        <input type="text" placeholder="Enter subject">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="input-box">
-                                                        <div class="range-slider">
-                                                            <label class="range-slider__label  ">Limits Of Balance ($)</label>
-                                                            <input class="range-slider__range" type="range" value="6000" min="0" max="10000">
-                                                            <span class="range-slider__value">0</span>
-                                                        </div>
-                                                        <button type="submit" class="main-btn">Get a Quote Now <i class="ri-arrow-right-up-line"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="skltbs-panel">
-                                    <div class="rs-compare-tab-form">
-                                        <h4 class="title">View more insurance Quote:</h4>
-                                        <p> Insurance is a financial arrangement that provide us individuals and our organizations with protection against potential financial losses or risks. It operates on the principle of risk pooling, where policyholders pay premiums to an insurance company in exchange for coverage.Life is unpredictable and insurance can offer peace of mind. </p>
-                                        <div class="rs-list">
-                                            <ul>
-                                                <li><i class="ri-check-double-line"></i> Superior service options</li>
-                                                <li><i class="ri-check-double-line"></i> Endless lifetime help</li>
-                                                <li><i class="ri-check-double-line"></i> Your best software</li>
-                                                <li><i class="ri-check-double-line"></i> Life time support</li>
-                                            </ul>
-                                            <ul>
-                                                <li><i class="ri-check-double-line"></i> Resolving your concerns with us</li>
-                                                <li><i class="ri-check-double-line"></i> We provide awesome services</li>
-                                                <li><i class="ri-check-double-line"></i> Solve your problem with us</li>
-                                                <li><i class="ri-check-double-line"></i> Addressing issues with us</li>
-                                            </ul>
-                                        </div>
-                                        <a class="main-btn" href="tab-style-2.html">View More <i class="ri-arrow-right-line"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==== Compare 2 Section Ends ==== -->
-
-    <!-- ==== Faq 2 Section Start ==== -->
-    <section class="rs-faq-2 pt-115 pb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
-                    <div class="section-title-2">
-                        <span> Your Answer</span>
-                        <h2 class="title">Frequently asked questions & searching answer.</h2>
-                    </div>
-                </div>
-                <div class="col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="rs-faq-2__box wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <div class="accordion active">
-                            <div class="accordion_tab active">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                What is insurance service?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                How many services do we provide?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                What is the experience of our team members?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                Why are we the best company?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="rs-faq-2__box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="accordion active">
-                            <div class="accordion_tab_2 active">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                What does insurance entail?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab_2">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                How many services do we offer?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab_2">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                What is the experience of our team members?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <div class="accordion_tab_2">
-                                <div class="heading-icon">
-                                    <i class="ri-question-fill"></i>
-                                </div>
-                                Why are we the best company?
-                                <div class="accordion_arrow">
-                                    <i class="ri-add-fill"></i>
-                                </div>
-                            </div>
-                            <div class="accordion_content">
-                                <div class="accordion_item">
-                                    <p>Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas dynamically innovate resource.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==== Faq 2 Section Ends ==== -->
+  
 
   
 
     <!--===== Tesimonial 2 Start =====-->
     <section class="rs-testimonial-2 pt-115 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="section-title-2">
-                        <span>Testimonials</span>
-                        <h2 class="title">What client say about our company</h2>
-                    </div>
-                    <div class="rs-testimonial-2__slider">
-                        <div class="rs-carousel owl-carousel rs-service__slider" data-loop="true" data-items="1" data-margin="100" data-autoplay="true" data-hoverpause="false" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-lg-device="1" data-md-device-nav="true" data-md-device-dots="false" data-doteach="false">
-                            <div class="rs-testimonial-2__slider-item">
-                                <div class="rs-quote">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
-                                        <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
-                                    </svg>
-                                </div>
-                                <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality. </p>
-                                <div class="rs-author">
-                                    <div class="rs-thumb">
-                                        <img src="assetsfront/images/testi5.jpg" alt="">
-                                    </div>
-                                    <div class="rs-content">
-                                        <h5 class="title">Ribeiro Nicolas</h5>
-                                        <span>HR, Envato</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rs-testimonial-2__slider-item">
-                                <div class="rs-quote">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
-                                        <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
-                                    </svg>
-                                </div>
-                                <p>Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality. Podcasting operational change management inside of workflows to establish a framework.</p>
-                                <div class="rs-author">
-                                    <div class="rs-thumb">
-                                        <img src="assetsfront/images/testi4.jpg" alt="">
-                                    </div>
-                                    <div class="rs-content">
-                                        <h5 class="title">Ribeiro Nicolas</h5>
-                                        <span>HR, Envato</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="rs-testimonial-2__slider-item">
-                                <div class="rs-quote">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
-                                        <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
-                                    </svg>
-                                </div>
-                                <p>Keeping your eye on the ball while performing a deep dive on the start-up mentality. Taking seamless key performance indicators offline to maximise the long tail.  Podcasting operational change management inside of workflows to establish a framework.</p>
-                                <div class="rs-author">
-                                    <div class="rs-thumb">
-                                        <img src="assetsfront/images/testi2.jpg" alt="">
-                                    </div>
-                                    <div class="rs-content">
-                                        <h5 class="title">Ribeiro Nicolas</h5>
-                                        <span>HR, Envato</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title-2">
+                    <span>Témoignages</span>
+                    <h2 class="title">Ce que disent nos clients à propos de notre assurance santé</h2>
                 </div>
-                <div class="col-lg-6">
-                    <div class="rs-testimonial-2__thumb wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <img src="assetsfront/images/testimonial-thumb-2.png" alt="">
-                        <div class="rs-shape">
-                            <img src="assetsfront/images/testimonial-shape.png" alt="">
-                        </div>
-                        <div class="rs-testimonial-image-box">
-                            <div class="rs-icon">
-                                <img src="assetsfront/images/avg_rating_img.png" alt="">
+                <div class="rs-testimonial-2__slider">
+                    <div class="rs-carousel owl-carousel rs-service__slider" data-loop="true" data-items="1" data-margin="100" data-autoplay="true" data-hoverpause="false" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-lg-device="1" data-md-device-nav="true" data-md-device-dots="false" data-doteach="false">
+                        <div class="rs-testimonial-2__slider-item">
+                            <div class="rs-quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
+                                    <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
+                                </svg>
                             </div>
-                            <h4 class="title">4.9</h4>
-                            <span> Avg Rating</span>
+                            <p>Votre assurance santé a véritablement changé ma vie. Avec leur service efficace et leurs solutions personnalisées, je me sens en sécurité et protégé. Je les recommande à tous ceux qui recherchent une tranquillité d'esprit en matière de santé.</p>
+                            <div class="rs-author">
+                                <div class="rs-thumb">
+                                    <img src="assetsfront/images/testi5.jpg" alt="">
+                                </div>
+                                <div class="rs-content">
+                                    <h5 class="title">Sophie Dubois</h5>
+                                    <span>Assurée depuis 2 ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rs-testimonial-2__slider-item">
+                            <div class="rs-quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
+                                    <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
+                                </svg>
+                            </div>
+                            <p>Je suis très satisfaite des services offerts par cette assurance santé. Leur équipe est toujours à l'écoute de mes besoins et me propose des solutions adaptées à ma situation. Je recommande vivement leur assurance à tous ceux qui recherchent un service de qualité.</p>
+                            <div class="rs-author">
+                                <div class="rs-thumb">
+                                    <img src="assetsfront/images/testi4.jpg" alt="">
+                                </div>
+                                <div class="rs-content">
+                                    <h5 class="title">Pierre Lefebvre</h5>
+                                    <span>Client depuis 3 ans</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rs-testimonial-2__slider-item">
+                            <div class="rs-quote">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="45" viewBox="0 0 20 15" fill="none">
+                                    <path d="M1.42857 14.2857H5.71429L8.57143 8.57143V0H0V8.57143H4.28571L1.42857 14.2857ZM12.8571 14.2857H17.1429L20 8.57143V0H11.4286V8.57143H15.7143L12.8571 14.2857Z" fill="white" style="fill:white;fill:white;fill-opacity:1;"></path>
+                                </svg>
+                            </div>
+                            <p>Cette assurance santé a dépassé mes attentes. Leur équipe professionnelle et dévouée m'a apporté un soutien inestimable en période de besoin. Je suis reconnaissant de les avoir comme partenaire de confiance pour ma santé et celle de ma famille.</p>
+                            <div class="rs-author">
+                                <div class="rs-thumb">
+                                    <img src="assetsfront/images/testi2.jpg" alt="">
+                                </div>
+                                <div class="rs-content">
+                                    <h5 class="title">Marie Martin</h5>
+                                    <span>Assurée depuis 5 ans</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-    </section>
-    <!--===== Tesimonial 2 Ends =====-->
+            <div class="col-lg-6">
+                <div class="rs-testimonial-2__thumb wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0s">
+                    <img src="assetsfront/images/testimonial-thumb-2.png" alt="">
+                    <div class="rs-shape">
+                        <img src="assetsfront/images/testimonial-shape.png" alt="">
+                    </div>
+                    <div class="rs-testimonial-image-box">
+                        <div class="rs-icon">
+                            <img src="assetsfront/images/avg_rating_img.png" alt="">
+                        </div>
+                        <h4 class="title">4.9</h4>
+                        <span>Évaluation moyenne</span>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</section>
 
-  
-
-
+    <!-- ==== Faq 2 Section Start ==== -->
+    <section class="rs-faq-2 pt-115 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="section-title-2">
+                    
+                    <h2 class="title">Questions fréquemment posées sur notre assurance santé</h2>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="rs-faq-2__box wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0s">
+                    <div class="accordion active">
+                        <div class="accordion_tab active">
+                            <div class="heading-icon">
+                                <i class="ri-question-fill"></i>
+                            </div>
+                            Quels services proposez-vous dans votre assurance santé ?
+                            <div class="accordion_arrow">
+                                <i class="ri-add-fill"></i>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="accordion_item">
+                                <p>Nous proposons une gamme complète de services dans notre assurance santé, y compris la couverture des frais médicaux, les soins hospitaliers, les médicaments sur ordonnance, les soins dentaires et bien plus encore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion_tab">
+                            <div class="heading-icon">
+                                <i class="ri-question-fill"></i>
+                            </div>
+                            Quels sont les avantages de votre assurance santé ?
+                            <div class="accordion_arrow">
+                                <i class="ri-add-fill"></i>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="accordion_item">
+                                <p>Notre assurance santé offre une couverture complète pour vous et votre famille, des services personnalisés et un accès facile aux soins de santé de qualité. De plus, nous proposons des tarifs compétitifs et une assistance dédiée pour répondre à vos besoins.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ajoutez ici les autres questions et réponses -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="rs-faq-2__box wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                    <div class="accordion active">
+                        <div class="accordion_tab_2 active">
+                            <div class="heading-icon">
+                                <i class="ri-question-fill"></i>
+                            </div>
+                            Que couvre votre assurance santé ?
+                            <div class="accordion_arrow">
+                                <i class="ri-add-fill"></i>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="accordion_item">
+                                <p>Notre assurance santé couvre une variété de frais médicaux, y compris les consultations de médecins, les médicaments sur ordonnance, les soins hospitaliers, les analyses de laboratoire, les radiographies et bien plus encore.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion_tab_2">
+                            <div class="heading-icon">
+                                <i class="ri-question-fill"></i>
+                            </div>
+                            Quels sont les critères d'éligibilité pour souscrire à votre assurance santé ?
+                            <div class="accordion_arrow">
+                                <i class="ri-add-fill"></i>
+                            </div>
+                        </div>
+                        <div class="accordion_content">
+                            <div class="accordion_item">
+                                <p>Notre assurance santé est disponible pour toute personne âgée de 18 ans ou plus. Il n'y a pas de restrictions basées sur l'état de santé préexistant, mais certaines conditions médicales peuvent affecter le coût de la prime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ajoutez ici les autres questions et réponses -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ==== Footer 2 Section Start ==== -->
     <footer class="rs-footer rs-footer-2 pt-100 pb-70">
@@ -1099,7 +818,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="rs-footer__about">
                         <a href="index-2.html"><img src="assetsfront/images/logo_home2.png" alt=""></a>
-                        <p class="desc">There are many variations of pass ages of Lorem Ipsum available, but the majority have suffered alteration in some form working insurigo</p>
+                        <p class="desc">"Protégez votre avenir avec Insurigo - votre partenaire de confiance pour une assurance complète et fiable. Ensemble, nous garantissons votre tranquillité d'esprit."</p>
                         <ul>
                             <li><a href="#"><i class="ri-facebook-fill"></i></a></li>
                             <li><a href="#"><i class="ri-twitter-x-fill"></i></a></li>
@@ -1108,45 +827,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <div class="rs-footer__navigation">
-                        <h4 class="title">Quick link</h4>
-                        <ul>
-                            <li><a href="about-1.html">About Us <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="pricing.html">Our Pricing <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="faq.html">Our Mission <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="blog.html">Latest News <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="contact.html">Contact Us <i class="ri-arrow-right-line"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="rs-footer__navigation item-2">
-                        <h4 class="title">Our Services</h4>
-                        <ul>
-                            <li><a href="travel-insurance.html">Travel Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="life-insurance.html">Life Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="house-insurance.html">House Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="car-insurance.html">Car Insurance <i class="ri-arrow-right-line"></i></a></li>
-                            <li><a href="family-insurance.html">Family Insurance <i class="ri-arrow-right-line"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="rs-footer__contact">
-                        <h4 class="title">Get In Touch</h4>
+               
+                
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="rs-footer__contact ">
+                        <h4 class="title">Contacter nous</h4>
                         <ul>
                             <li>
                                 <div class="rs-icon">
                                     <i class="ri-map-2-line"></i>
                                 </div>
-                                <span>374 William S Canning Blvd, Fall River MA 2721, USA </span>
+                                <span>64, rue de Palestine 1002 Tunis </span>
                             </li>
                             <li>
                                 <div class="rs-icon">
                                     <i class="ri-phone-line"></i>
                                 </div>
-                                <a href="tel:+880155-69569">(+880)155-69569</a>
+                                <a href="tel:+880155-69569">+216 71 788 800</a>
                             </li>
                             <li>
                                 <div class="rs-icon">
@@ -1154,12 +851,7 @@
                                 </div>
                                 <a href="mailto:isurigo@gmail">isurigo@gmail.com</a>
                             </li>
-                            <li>
-                                <div class="rs-icon">
-                                    <i class="ri-corner-down-right-line"></i>
-                                </div>
-                                <a href="about-1.html">More Information</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -1170,7 +862,7 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="rs-footer__copyright-text">
-                                    <p>© 2024 Insurigo. Designed By <a href="https://rstheme.com/" target="_blank">RSTheme.</a></p>
+                                    <p>© 2024 Insurigo Assurance Santé</a></p>
                                 </div>
                             </div>
                             <div class="col-lg-6">

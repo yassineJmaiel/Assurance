@@ -50,7 +50,8 @@
                                         <td>{{ $patient->numeroContrat }}</td>
                                         <td>{{ $patient->dateDebutContrat }}</td>
                                         <td>{{ $patient->dateFinContrat }}</td>
-                                        <td><a href="#"><i class="fas fa-pencil-alt ms-text-primary"></i></a> 
+                                        <td>
+                                            <a href="{{ route('assureurs.edit', $patient->id) }}"><i class="fas fa-pencil-alt ms-text-primary"></i></a> 
                                             <a href="/deleteAssuré/{{ $patient->id }}"><i class="far fa-trash-alt ms-text-danger"></i></a>
                                         </td>
                                     </tr>

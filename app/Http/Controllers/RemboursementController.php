@@ -46,7 +46,7 @@ public function store(Request $request)
     $remboursement->montant_total = ($request->type == "pour_moi") ? $request->input('montant_total') : $request->input('montant_total_membre');
 
     $remboursement->save();
-
+ 
     return redirect('list_remboursements')->with('success', 'Remboursement enregistré avec succès');
 }
 

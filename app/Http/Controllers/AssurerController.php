@@ -103,9 +103,12 @@ public function showPatients()
 public function delete($id){
 
     $membre=assurer::find($id);
-    $user=User::where('assurer_id',$membre->id)->first();
+    $user=User::where('email',$membre->email)->first();
+    
+
     $membre->delete();
     $user->delete();
+
     return redirect()->back()->with('success', 'Asssuré supprimé avec succés !');;
   }
 

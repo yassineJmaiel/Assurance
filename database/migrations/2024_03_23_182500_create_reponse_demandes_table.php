@@ -14,14 +14,21 @@ return new class extends Migration
         Schema::create('reponse_demandes', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('remboursement_id')->nullable();
-            $table->foreign('remboursement_id')->references('id')->on('remboursements');
+            $table->foreign('remboursement_id')
+                  ->references('id')
+                  ->on('remboursements')
+                  ->onDelete('cascade');
             $table->unsignedBigInteger('assurer_id')->nullable();
-            $table->foreign('assurer_id')->references('id')->on('users');
-           
+            $table->foreign('assurer_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onDelete('cascade');
+            
             $table->string('status');
             $table->string('commentaire')->nullable();
             $table->timestamps();
         });
+        
     }
 
     /**

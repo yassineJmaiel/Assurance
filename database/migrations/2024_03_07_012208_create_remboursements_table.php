@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_membre')->nullable();
             $table->foreign('id_membre')->references('id')->on('membre_familles');
             $table->unsignedBigInteger('assurer_id'); 
-        $table->foreign('assurer_id')->references('id')->on('users');
+        $table->foreign('assurer_id')->references('id')->on('users')->onDelete('cascade');;
             $table->string('nom_prestataire')->nullable();
             $table->date('date_service');
             $table->string('medecin');
